@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1453aa42-acfa-4f4e-b333-785f4dfa138c">
+  <producedTypes>
+    <objectType typeId="396d2f4d-7c5b-4524-96e7-335e3bef79da" valueTypeId="02e80c18-9bc1-46b4-b01c-3b6eb3907a13"/>
+    <refType typeId="13405ecc-b64e-4b62-9655-bf8afa5d3a8d" valueTypeId="b6aa1337-eb9a-4534-bbf9-e826ac4cb341"/>
+    <selectionType typeId="5bcb089e-48fd-4ffd-bcbe-7429869efbdb" valueTypeId="448ce395-7f6a-44fc-9e09-3d19efe0553a"/>
+    <listType typeId="146eed37-1821-4292-87d2-be22633c3212" valueTypeId="62bc1a86-7b9f-4a1c-9af7-e43cdef12812"/>
+    <managerType typeId="4da0ca8b-e99e-456f-a47a-ac83e53a9980" valueTypeId="300ef3f5-2cb3-4246-a007-9bb1bd58fb8f"/>
+  </producedTypes>
+  <name>Материалы</name>
+  <synonym>
+    <key>en</key>
+    <value>Материалы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Материалы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Материалы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>en</key>
+    <value>Материалы</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Материалы</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Материалы.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="a5322c8a-657e-47ad-9b27-26f51a4ddef6">
+    <name>Артикул</name>
+    <synonym>
+      <key>en</key>
+      <value>Артикул</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3dfc25a5-0314-46c4-b4c4-0850014a9df7">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>en</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fac4a816-2711-4fc1-9265-7c5f21115339">
+    <name>МинимальныйОстаток</name>
+    <synonym>
+      <key>en</key>
+      <value>Минимальный остаток</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="3f120e13-7673-4c54-8c52-70e312c5f222">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>en</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

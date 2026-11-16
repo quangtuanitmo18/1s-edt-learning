@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="45363326-3ed7-44c8-86ec-3014234ee93d">
+  <producedTypes>
+    <objectType typeId="ea486e52-57e5-4d2c-b1df-fec5b6ae471a" valueTypeId="c021697d-8d19-4697-97e9-e74bad896cff"/>
+    <refType typeId="790da255-e418-4aee-9e69-c237d7bb3a71" valueTypeId="84405797-6734-4417-9ed8-3bfa15468bc6"/>
+    <selectionType typeId="3803acef-c86e-4558-bc95-d05a3b1f6e53" valueTypeId="e5136874-48f7-4a21-ad40-f9b6e718ba3f"/>
+    <listType typeId="31658d7d-55fd-4511-8f37-4da336dbe744" valueTypeId="3a1a42e8-db47-410d-928f-9e66f50f702a"/>
+    <managerType typeId="166531c0-f4ab-4cb3-aee2-4ad7e2d825f9" valueTypeId="fbcee3e6-0807-48a2-b55b-c20ac07d50a8"/>
+  </producedTypes>
+  <name>ВыдачаМатериалов</name>
+  <synonym>
+    <key>en</key>
+    <value>Выдача материалов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВыдачаМатериалов.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>en</key>
+    <value>Выдача материалов</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Выдача материалов</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.ОстаткиМатериалов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="c676c896-0f0d-4ff4-8160-f2d274cc2590">
+    <name>Склад</name>
+    <synonym>
+      <key>en</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="6c8af3bb-dd53-48b6-9c9f-ff2ab3e5e1dc">
+    <producedTypes>
+      <objectType typeId="297e9b7b-0f83-4e3d-8f9f-6167215f1330" valueTypeId="65b2ed86-82c9-4592-b76d-81ebe6b5c7af"/>
+      <rowType typeId="07f67d55-a355-4b76-9149-ca8b2c36a4a9" valueTypeId="a864973c-efb3-4a1c-b2f3-1e72dad99df5"/>
+    </producedTypes>
+    <name>Материалы</name>
+    <synonym>
+      <key>en</key>
+      <value>Материалы</value>
+    </synonym>
+    <attributes uuid="facb3b2c-2ed8-4d9b-ae1c-3225eb5ea3d8">
+      <name>Материал</name>
+      <synonym>
+        <key>en</key>
+        <value>Материал</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Материалы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="30e67f04-656c-4fc3-89ee-6f045d442fe8">
+      <name>Количество</name>
+      <synonym>
+        <key>en</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>
